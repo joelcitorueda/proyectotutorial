@@ -7,17 +7,8 @@
 </head>
 <body>
     <style>
-          nav {
-            background-color: #ce6108;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 10px;
-        }
+        
+        
         header {
             background-color: #050505;
             color: white;
@@ -33,23 +24,30 @@
     <div id="header">
     <header>
         <h1>Reparación de Computadoras</h1>
-        <img src="src/img/logo.jpeg" width="80" height="50">
+        <img src="src/img/logo.jpeg" width="100" height="50">
     </header>
         
     </div>
     <div id="menu">
-        <nav>
-            <ul>
-                <h2>EN TENDENCIA</h2>
-                        <a href="discoduro.html">DISCO DURO MAS FIABLE</a>
-                        <a href="consejos.html">CONSEJOS DE CUIDADO</a>
-                        <a href="cambiardisco.html">COMO CAMBIAR EL DISCO DURO DE TU ORDENADOR</a>
-        </nav>
-
+       
 
     </div>
-    <div class="contenido">
-        <form>
+    <aside> <!--menu a la izqierda-->
+        <nav> <!--menu-->
+            
+            <h2>EN TENDENCIA</h2>
+            <ul>
+                <li><a href="discoduro.html">DISCO DURO MAS FIABLE</a></li>
+                <li><a href="consejos.html">CONSEJOS DE CUIDADO</a></li>
+                <li> <a href="cambiardisco.html">COMO CAMBIAR EL DISCO DURO DE TU ORDENADOR</a></li>
+                <li> <a href="contacteme.html">PARA MAS CONTACTO CONMIGO</a></li>
+            </ul>
+                  
+                    
+        </nav>
+    </aside>
+    <section> <!--contenido-->
+        <article> <!--articulos por separados-->
             <h2>¿Cuál es el primer paso antes de realizar cualquier reparación en una computadora?</h2>
             <dl>
                 <dd>
@@ -57,7 +55,8 @@
                 es analizar y verifivar cual es el problema  por el cual esta fallando la computadora o el ordenador
                 </dd>
             </dl>
-                
+        </article>
+        <article>
             <h2>Si la computadora no enciende, ¿cuáles son las posibles causas?</h2>
             <dl>
                 <dd>
@@ -72,6 +71,8 @@
                     </ul>
                 </dd>
             </dl>
+        </article>
+        <article>
             <h2>¿Cómo se puede solucionar un problema de pantalla azul en Windows?</h2>
                   <dl>
                      <dd> Los errores de pantalla azul (también denominados a veces errores de pantalla en negro o errores de código STOP) 
@@ -88,10 +89,8 @@
                         restaurar Windows a un punto anterior en el tiempo.
                     </dd>
                   </dl>
-                  
-
-                    
-                
+        </article>
+        <article>
             <h2>La computadora emite pitidos durante el arranque, ¿qué podría indicar?</h2>
                     <dl>
                         <dd>
@@ -99,47 +98,40 @@
                         </dd>
                         
                     </dl>
-               
+        </article>
+        <article>
             <h2>¿Qué precauciones debes tomar antes de manipular componentes internos de una computadora?</h2>
-                   <dl>
-                    <dd>
-                        Antes de manipular componentes internos de una computadora, asegúrate de apagarla y desconectarla de la corriente eléctrica. Descarga cualquier estática tocando una superficie metálica antes de tocar los componentes. Utiliza una pulsera antiestática para prevenir daños por descargas eléctricas estáticas. Trabaja en un lugar limpio y bien iluminado, y ten cuidado al manipular los componentes para evitar daños físicos.
-                    </dd>
-                   </dl>
+            <dl>
+             <dd>
+                 Antes de manipular componentes internos de una computadora, asegúrate de apagarla y desconectarla de la corriente eléctrica. Descarga cualquier estática tocando una superficie metálica antes de tocar los componentes. Utiliza una pulsera antiestática para prevenir daños por descargas eléctricas estáticas. Trabaja en un lugar limpio y bien iluminado, y ten cuidado al manipular los componentes para evitar daños físicos.
+             </dd>
+            </dl>
+        </article>
+        <article>
+            
             <h2>Si una computadora se sobrecalienta constantemente, ¿cómo se puede solucionar el problema?</h2>
                     <dl>
                         <dd>
                             Para solucionar el problema de sobrecalentamiento, puedes tomar varias medidas: asegurarte de que los ventiladores estén limpios y funcionando correctamente, proporcionar una buena ventilación alrededor de la computadora, asegurarte de que no haya obstrucciones en las salidas de aire, aplicar pasta térmica nueva en la CPU, considerar agregar ventiladores adicionales o cambiar a un sistema de refrigeración más eficiente.
                         </dd>
                     </dl>
+        </article>
+        <article> 
             <h2>¿Cómo se puede verificar si el disco duro de una computadora está fallando?</h2>
-                    <dl>
-                        <dd>
-                            Puedes verificar si el disco duro está fallando realizando lo siguiente:
-                            <ul>
-                                <li>Ejecutar una comprobación de errores del disco duro utilizando herramientas como "chkdsk" en Windows o "fsck" en sistemas Linux.</li>
-                                <li>Utilizar software de diagnóstico específico del fabricante del disco duro para identificar problemas.</li>
-                                <li>Observar si la computadora se vuelve inusualmente lenta, si hay errores al acceder a archivos o si hay ruidos extraños provenientes del disco duro.</li>
-                                <li>Realizar copias de seguridad regulares para evitar la pérdida de datos en caso de un fallo inminente.</li>
-                                <li></li>
-                            </ul>
-                        </dd>
-                    </dl>
-            <h2>La computadora está lenta, ¿cuáles son algunas posibles razones y soluciones?</h2>
             <dl>
                 <dd>
-                    Algunas posibles razones y soluciones para una computadora lenta incluyen:
+                    Puedes verificar si el disco duro está fallando realizando lo siguiente:
                     <ul>
-                        <li>Falta de espacio en disco: Libera espacio en disco eliminando archivos no deseados.</li>
-                        <li>Demasiados programas en segundo plano: Cierra aplicaciones innecesarias para liberar recursos.</li>
-                        <li>Malware o virus: Ejecuta un escaneo completo con software antivirus.</li>
-                        <li>Poca memoria RAM: Considera agregar más memoria RAM si es posible.</li>
-                        <li>Disco duro fragmentado: Realiza una desfragmentación del disco.</li>
-                        <li>Controladores desactualizados: Asegúrate de tener los controladores más recientes para los componentes.</li>
+                        <li>Ejecutar una comprobación de errores del disco duro utilizando herramientas como "chkdsk" en Windows o "fsck" en sistemas Linux.</li>
+                        <li>Utilizar software de diagnóstico específico del fabricante del disco duro para identificar problemas.</li>
+                        <li>Observar si la computadora se vuelve inusualmente lenta, si hay errores al acceder a archivos o si hay ruidos extraños provenientes del disco duro.</li>
+                        <li>Realizar copias de seguridad regulares para evitar la pérdida de datos en caso de un fallo inminente.</li>
+                        <li></li>
                     </ul>
                 </dd>
-            </dl>
-                
+            </dl> 
+        </article>
+        <article>
             <h2>¿Qué pasos seguirías para limpiar físicamente el interior de una computadora?</h2>
             <dl>
                 <dd>
@@ -163,6 +155,8 @@
                     Asegúrate de que todos los cables estén conectados de manera segura antes de cerrar la carcasa.
                 </li>
             </ul> 
+        </article>
+        <article>
             <h2>La computadora emite un sonido de clic constante proveniente del disco duro, ¿qué podrías hacer al respecto?</h2>
             <dl>
                 <dd>
@@ -181,9 +175,24 @@
                     Reemplazar el disco duro lo antes posible y reinstalar el sistema operativo y aplicaciones, o llevar la computadora a un profesional para que realice el reemplazo y la recuperación de datos si es necesario.
                 </li>
             </ul>
-        </form>
-
-    </div>
+        </article>
+        <article>
+            <h2>La computadora está lenta, ¿cuáles son algunas posibles razones y soluciones?</h2>
+            <dl>
+                <dd>
+                    Algunas posibles razones y soluciones para una computadora lenta incluyen:
+                    <ul>
+                        <li>Falta de espacio en disco: Libera espacio en disco eliminando archivos no deseados.</li>
+                        <li>Demasiados programas en segundo plano: Cierra aplicaciones innecesarias para liberar recursos.</li>
+                        <li>Malware o virus: Ejecuta un escaneo completo con software antivirus.</li>
+                        <li>Poca memoria RAM: Considera agregar más memoria RAM si es posible.</li>
+                        <li>Disco duro fragmentado: Realiza una desfragmentación del disco.</li>
+                        <li>Controladores desactualizados: Asegúrate de tener los controladores más recientes para los componentes.</li>
+                    </ul>
+                </dd>
+            </dl>
+        </article>
+    </section>
     <div id="footer">
         <center>
             <p>&copy; TUTORIAL DE JULIAN RUEDA REPAIR AREA</p>
