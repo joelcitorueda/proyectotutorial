@@ -1,15 +1,62 @@
-h2{
-    color: rgb(197, 140, 34);
+header {
+    background-color: #050505;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Caprasimo', cursive;
 }
-p{
-    color: orange;
-}
-a{
-    color: orange;
-}
-h1{
-    color: darkorange;
+.contenido {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }
 .color-verde{
     color: green;
+}
+.menu__links__texto{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(10, 9, 9);
+    text-align: justify;   
+}
+.img__logo{
+    width: 100px;
+    height: 50px ;
+    
+}
+.img__contenido{
+    width: 400px; ;
+    height: 250px;
+}
+.contenido__titulo{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(219, 112, 11);
+    text-align: justify; 
+}
+.contenido__texto{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(10, 9, 9);
+    text-align: justify; 
+}
+.cuestionario{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(10, 9, 9);
+    text-align: justify;
+}
+.img__1cambiardisco{
+    width: 1000px;
+    height: 500px;
+}
+.img__2cambiardisco{
+    width: 500px;
+    height: 500px;
+}
+.cuidados{
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(219, 112, 11);
+    text-align: justify; 
 }
