@@ -3,36 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <title>Reparación de Computadoras</title>
     <title>Document</title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
-<style>
-     header {
-            background-color: #060706;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        .contenido {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-</style>
 <body>
     <header>
-        <img src="src/img/logo.jpeg" width="100" height="50">
+        <img class="img__logo" src="src/img/logo.jpeg">
         <h1>Cómo cambiar el disco duro</h1>
         <h1>de tu ordenador por un SSD</h1>
     </header>
     <aside> <!--menu a la izqierda-->
-        <nav> <!--menu-->
+        <nav class="menu"> <!--menu-->
             
-            <h2>EN TENDENCIA</h2>
-            <ul>
-                <li><a href="discoduro.html">DISCO DURO MAS FIABLE</a></li>
-                <li><a href="consejos.html">CONSEJOS DE CUIDADO</a></li>
-                <li> <a href="portafolio.html">INICIO</a></li>
-                <li> <a href="contacteme.html">PARA MAS CONTACTO CONMIGO</a></li>
+            <h2 class="menu__tenedencia">EN TENDENCIA</h2>
+            <ul class="menu__links">
+                <li><a class="menu__links__texto" href="discoduro.html">DISCO DURO MAS FIABLE</a></li>
+                <li><a class="menu__links__texto" href="consejos.html">CONSEJOS DE CUIDADO</a></li>
+                <li><a class="menu__links__texto" href="tutorial.html">INICIO</a></li>
+                <li><a class="menu__links__texto" href="contacteme.html">PARA MAS CONTACTO CONMIGO</a></li>
             </ul>
                   
                     
@@ -43,7 +35,7 @@
         <dl>
             <dd>
                 <center>
-                    <img src="src/img/discom-duro-02.webp"width="1000" height="500">
+                    <img class="img__1cambiardisco" src="src/img/discom-duro-02.webp">
                 </center>
             </dd>
         </dl>
@@ -52,31 +44,33 @@
             <article>
                 <dl>
                     <dd>
-                        La mejor manera de dar un soplo de aire fresco a un viejo ordenador es sustituir su antiguo disco duro mecánico por una unidad SSD. Gracias a sus velocidades de transferencia netamente superiores y sus minúsculos tiempos de búsqueda y acceso a los datos, lograremos un boost de velocidad más que apreciable. Veamos cómo lo debemos de hacer.
-                        La bajada de precio que estamos viendo en las unidades de almacenamiento sólido está propiciando que muchos usuarios se decidan, finalmente, a desterrar su antiguo disco duro mecánico, para sustituirlo por uno de los nuevos SSD. Generalmente, esta sustitución suele hacer referencia al disco mecánico donde se almacena el sistema operativo, que es donde más se va a notar el cambio. Al menos, de manera práctica, porque si empleáis el nuevo SSD para juegos, lo único en que mejorará el equipo es que los juegos cargarán más rápidos. Sin embargo, si lo instalamos para sustituir a nuestra unidad de sistema, las ventajas serán más que evidentes desde la primera vez que arranquéis el ordenador.
-                        Lo primero que deberéis de decidir es el tipo de formato a emplear para vuestro nuevo SSD. Si tenéis una placa base moderna, es muy posible que incorpore una ranura M.2 para este tipo de unidades de almacenamiento sólido. En este caso, deberíais de averiguar si la ranura soporta la conexión al bus PCIe o solo al bus SATA de la placa base. Esta decisión es importante hacerla, dado que de nada servirá comprar un SSD NVMe, si luego no va a poder funcionar a toda la velocidad que soporta este tipo de conexionado.
-                        Si, por contra, vuestro equipo no tiene este tipo de conexión, solo podréis comprar una unidad en formato de 2,5″.
-                        Otro aspecto a decidir es el tamaño de la unidad por la que queréis sustituir al disco mecánico. Gracias a las bajadas de precio, podéis encontrar SSD muy baratos de todas las capacidades. Por ejemplo, el Kingston SSD A400 de 120 GB es un modelo de lo más capaz, y por los 31,99 euros que cuesta, es una opción perfecta si no se tiene mucho dinero.
+                        <p class="contenido__texto">La mejor manera de dar un soplo de aire fresco a un viejo ordenador es sustituir su antiguo disco duro mecánico por una unidad SSD. Gracias a sus velocidades de transferencia netamente superiores y sus minúsculos tiempos de búsqueda y acceso a los datos, lograremos un boost de velocidad más que apreciable. Veamos cómo lo debemos de hacer.
+                            La bajada de precio que estamos viendo en las unidades de almacenamiento sólido está propiciando que muchos usuarios se decidan, finalmente, a desterrar su antiguo disco duro mecánico, para sustituirlo por uno de los nuevos SSD. Generalmente, esta sustitución suele hacer referencia al disco mecánico donde se almacena el sistema operativo, que es donde más se va a notar el cambio. Al menos, de manera práctica, porque si empleáis el nuevo SSD para juegos, lo único en que mejorará el equipo es que los juegos cargarán más rápidos. Sin embargo, si lo instalamos para sustituir a nuestra unidad de sistema, las ventajas serán más que evidentes desde la primera vez que arranquéis el ordenador.
+                            Lo primero que deberéis de decidir es el tipo de formato a emplear para vuestro nuevo SSD. Si tenéis una placa base moderna, es muy posible que incorpore una ranura M.2 para este tipo de unidades de almacenamiento sólido. En este caso, deberíais de averiguar si la ranura soporta la conexión al bus PCIe o solo al bus SATA de la placa base. Esta decisión es importante hacerla, dado que de nada servirá comprar un SSD NVMe, si luego no va a poder funcionar a toda la velocidad que soporta este tipo de conexionado.
+                            Si, por contra, vuestro equipo no tiene este tipo de conexión, solo podréis comprar una unidad en formato de 2,5″.
+                            Otro aspecto a decidir es el tamaño de la unidad por la que queréis sustituir al disco mecánico. Gracias a las bajadas de precio, podéis encontrar SSD muy baratos de todas las capacidades. Por ejemplo, el Kingston SSD A400 de 120 GB es un modelo de lo más capaz, y por los 31,99 euros que cuesta, es una opción perfecta si no se tiene mucho dinero.</p>
                     </dd>
                     <dd>
                         
-                            <img src="src/img/Kingston-SSD-A400-01.webp"width="500" height="500">
+                            <img class="img__2cambiardisco" src="src/img/Kingston-SSD-A400-01.webp">
                         
                     </dd>
                     
                     <dd>
-                        Aunque si queréis tener una unidad M.2 NVMe de ese mismo tamaño, siempre podéis optar por un Corsair MP300 de 120 GB que, por 68,20 euros os dará hasta 1.600 MB/s de velocidad de transferencia de archivos.
+                        <p class="contenido__texto">Aunque si queréis tener una unidad M.2 NVMe de ese mismo tamaño, siempre podéis optar por un Corsair MP300 de 120 GB que, por 68,20 euros os dará hasta 1.600 MB/s de velocidad de transferencia de archivos.</p>
                     </dd>
-                        <img src="src/img/Corsair-MP300-01.webp"width="500" height="500">
+                    <dd>
+                        <img class="img__2cambiardisco" src="src/img/Corsair-MP300-01.webp">
+                    </dd>
                 </dl>
             </article>
             <article>
                 <dl>
-                    <h2>No es conveniente clonar vuestro antiguo disco duro al nuevo SSD</h2>
+                    <h2 class="contenido__titulo">No es conveniente clonar vuestro antiguo disco duro al nuevo SSD</h2>
                     <dd>
-                        Sabemos que muchos usuarios en esta posición estarán pensando en clonar el disco duro mecánico al nuevo SSD. Pero hacer esto sería un completo error por vuestra parte. Si lo clonáis, el nuevo SSD va a funcionar, pero la instalación del Windows con la que ha estado funcionando la antigua unidad está configurada, internamente, para una unidad de almacenamiento mecánico, no para una sólida. Esto podría generar problemas en el rendimiento del SSD, o incluso dañar el SSD porque no se realice el necesario TRIM, que se requiere para tener estas unidades sólidas en perfecto funcionamiento.
+                       <p class="contenido__texto"> Sabemos que muchos usuarios en esta posición estarán pensando en clonar el disco duro mecánico al nuevo SSD. Pero hacer esto sería un completo error por vuestra parte. Si lo clonáis, el nuevo SSD va a funcionar, pero la instalación del Windows con la que ha estado funcionando la antigua unidad está configurada, internamente, para una unidad de almacenamiento mecánico, no para una sólida. Esto podría generar problemas en el rendimiento del SSD, o incluso dañar el SSD porque no se realice el necesario TRIM, que se requiere para tener estas unidades sólidas en perfecto funcionamiento.
                         Por tanto, vais a tener que instalar el sistema operativo desde cero en vuestro nuevo SSD. Y para hacerlo, la operación más importante a realizar es un back up de todos los archivos de datos importantes de la unidad. Si tenéis la unidad correctamente particionada, con una parte del disco para la unidad C y el resto del espacio empleado en otra partición, esto no debiera de ser ningún problema para vosotros. O si tenéis más unidades de disco duro, tampoco lo va a ser.
-                        En el caso de no tener más unidades de disco duro para hacer el back up de los datos, siempre podéis desconectar la unidad mecánica, conectar el SSD, instalar el nuevo sistema operativo y, una vez esté funcionando, volver a conectar el antiguo disco mecánico para sacar los datos y eliminar la antigua instalación de Windows de esa unidad, para que no se generen problemas con el arranque del sistema en el futuro.
+                        En el caso de no tener más unidades de disco duro para hacer el back up de los datos, siempre podéis desconectar la unidad mecánica, conectar el SSD, instalar el nuevo sistema operativo y, una vez esté funcionando, volver a conectar el antiguo disco mecánico para sacar los datos y eliminar la antigua instalación de Windows de esa unidad, para que no se generen problemas con el arranque del sistema en el futuro.</p>
                     </dd>
                     <dd>
                         
