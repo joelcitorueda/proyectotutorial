@@ -2,31 +2,32 @@ header {
     background-color: #050505;
     color: white;
     padding: 10px;
+    margin: 10px;
     text-align: center;
     font-family: 'Caprasimo', cursive;
+
 }
 .contenido {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+    width: 1000px;
+    margin: 10px;
+    padding: 50px;
+    border: 1px;
+    color: aliceblue;
+    list-style: none;
 }
 .color-verde{
     color: green;
 }
-.menu__links__texto{
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(10, 9, 9);
-    text-align: justify;   
-}
 .img__logo{
+    
     width: 100px;
     height: 50px ;
     
 }
 .img__contenido{
-    width: 400px; ;
+    width: 400px; 
     height: 250px;
+    border-radius: 20px;
 }
 .contenido__titulo{
     font-size: 24px;
@@ -37,13 +38,13 @@ header {
 .contenido__texto{
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(10, 9, 9);
+    color: white;
     text-align: justify; 
 }
 .cuestionario{
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(10, 9, 9);
+    color: rgb(241, 237, 237);
     text-align: justify;
 }
 .img__1cambiardisco{
@@ -59,4 +60,57 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(219, 112, 11);
     text-align: justify; 
+}
+.botton-div{ /*dibujando el boton*/
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    border: 5px solid gray;
+    margin: 10px;
+}
+.botton-div__texto{
+    font-size: 14px;
+    color: blue;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu{
+    font-size: 14px;
+    color: rgb(245, 241, 241);
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    width: 1000px;
+    margin: 10px;
+    padding: 50px;
+    border: 1px;
+    color: aliceblue;
+    list-style: none;
+    text-decoration: none;
+    
+}
+#footer{
+    justify-content: center;
+    display: flex;
+}
+.contenido{
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+.menu__links__texto{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: justify;   
+}
+.menu__tendencia{
+    text-decoration: none;
+    list-style: none;
+}
+.menu__links{
+    list-style: none;
+}
+.contenido__texto{
+    list-style: none;
 }
