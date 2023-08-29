@@ -8,76 +8,75 @@
     <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <!-- Agrega los enlaces a los archivos CSS de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
+  <div class="container-fluid bg-black">
     <header class="logo">
-        <h1>Reparación de Computadoras</h1>
-        <img class="img__logo"  src="src/img/logo.jpeg">
-    </header>
-    <section class="central">
-      <aside class="aside__menu"> <!--menu a la izqierda-->
-        <nav class="menu"> <!--menu-->
+      <h1>Reparación de Computadoras</h1>
+      <img class="img__logo"  src="src/img/logo.jpeg">
+  </header>
+  <div class="row align-items-center">
+    <div class="col-4 ">
+      <nav class="menu"> <!--menu-->
             
-            <h2 class="menu__tenedencia">EN TENDENCIA</h2>
+        <h2 class="menu__tenedencia text-white">EN TENDENCIA</h2>
+        <br/>
+        <br/>
+        <ul class="menu__links">
+            <li><a class="menu__links__texto"  href="discoduro.html">DISCO DURO MAS FIABLE</a></li>
             <br/>
             <br/>
-            <ul class="menu__links">
-                <li><a class="menu__links__texto"  href="discoduro.html">DISCO DURO MAS FIABLE</a></li>
-                <br/>
-                <br/>
-                <li><a class="menu__links__texto"  href="consejos.html">CONSEJOS DE CUIDADO</a></li>
-                <br/>
-                <br/>
-                <li> <a class="menu__links__texto"  href="cambiardisco.html">COMO CAMBIAR EL DISCO DURO DE TU ORDENADOR</a></li>
-                <br/>
-                <br/>
-                <li> <a class="menu__links__texto"  href="tutorial.html">INICIO</a></li>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <img class="img__menu" src="src/img/kawai.jpeg" alt="tendencia">    
-            </ul>
-                  
-                    
-        </nav>
-    </aside>
-      <section class="contenido">
-        <center>
-          <form action="#" method="post">
-              <ul class="cuestionario">
-                  <li>
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="user_name" />
-                    <br/>
-                
-                  </li>
-                  <li>
-                    <label for="mail">Correo electrónico:</label>
-                    <input type="email" id="mail" name="user_mail" />
-                    <br/>
-                  </li>
-                  <li>
-                    <label for="cellphone">Numero de celular: </label>
-                    <input type="tel" id="tel" name="tel" />
-                    <br/>
-                  </li>
-                  <li>
-                    <label for="msg">Comentario :</label>
-                    <textarea id="msg" name="user_message"></textarea>
-                    <br/>
-                  </li>
-                  <li class="button">
-                    <button type="submit">Envíe su mensaje</button>
-                  </li>
-              </ul>
+            <li><a class="menu__links__texto"  href="consejos.html">CONSEJOS DE CUIDADO</a></li>
+            <br/>
+            <br/>
+            <li> <a class="menu__links__texto"  href="cambiardisco.html">COMO CAMBIAR EL DISCO DURO DE TU ORDENADOR</a></li>
+            <br/>
+            <br/>
+            <li> <a class="menu__links__texto"  href="tutorial.html">INICIO</a></li>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <img class="img__menu" src="src/img/kawai.jpeg" alt="tendencia">    
+        </ul>      
+      </nav>
+    </div>
+    <div class="col-8 text-end" >
+      <form action="#" method="post">
+        <ul class="cuestionario text-center">
+            <li>
+              <label for="name"> Nombre :</label>
+              <input type="text" id="name" name="user_name" />
+              <br/>
+          
+            </li>
+            <li>
+              <label for="mail"> Correo electrónico :</label>
+              <input type="email" id="mail" name="user_mail" />
+              <br/>
+            </li>
+            <li>
+              <label for="cellphone">Numero de celular: </label>
+              <input type="tel" id="tel" name="tel" />
+              <br/>
+            </li>
+            <li>
+              <label for="msg">Comentario :</label>
+              <textarea id="msg" name="user_message"></textarea>
+              <br/>
+            </li>
+            <li class="button">
+              <button type="submit">Envíe su mensaje</button>
+            </li>
+        </ul>
       </form>
-      </center>
-  
-      </section>
-        
-
-    </section>
+    </div>
+  </div>
+  </div>
+  <!-- Agrega los enlaces a los archivos JS de Bootstrap 5 (opcional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
